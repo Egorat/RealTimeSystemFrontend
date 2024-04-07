@@ -1,0 +1,11 @@
+{{outlet}}
+{{#each ws.visions as |fd|}}
+    <div style="display: inline-block">
+        <div>{{fd.name}}</div>
+        <div>{{fd.model}}</div>
+        <div>{{fd.description}}</div>
+        <div>{{fd.status}}</div>
+        <div>Координаты: {{fd.location.coord}}</div>
+        <div>Номер: {{fd.location.robotnumber}}</div>
+    </div>
+{{/each}}
